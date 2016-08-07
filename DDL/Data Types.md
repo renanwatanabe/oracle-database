@@ -3,9 +3,9 @@
 
 
 
-**CHAR**
 
-First Header       | Second Header
+
+**Char**           | Valores
 -------------------|------------------------------------------------------------------------------
 Nome               | CHAR
 Descricao          | Tipo de dado caractere.
@@ -14,13 +14,16 @@ Tamanho Maximo     | 2000 bytes.
 Observacoes        | Ao inserir um registro, sera sempre considerado o tamanho maximo do campo.
 
 Exemplos :
+```SQL
 CREATE TABLE TB_PESSOA(
 numero char(5)
 );
+```
 
-INSERT INTO TB_PESSOA  VALUES(1);  //insere o caractere '1' com 4 espacos a direita '1    ';
-INSERT INTO TB_PESSOA  VALUES('a'); //insere o caractere 'a' com 4 espacos a direita 'a    ';
-
+```SQL
+INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a direita '1    ';
+INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
+```
 
 **VARCHAR2**
 Nome : VARCHAR2
