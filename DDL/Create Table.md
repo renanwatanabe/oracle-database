@@ -28,7 +28,7 @@ Descrição:  Restrição para nao poder gravar valor null na tabela apenas.
 
 Exemplos de criação:
 
-**NOT NULL In line**
+**In line**
 ```SQL
 CREATE TABLE TB_PERSONAGEM()
 NICKNAME VARCHAR2(100) NOT NULL  /* Cria uma constraint anonima(gerada com nome pelo oracle) 
@@ -41,7 +41,7 @@ NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   /* Cria uma constraint 
 );
 ```
 
-**NOT NULL Out of Line**
+**Out of Line**
 
 Nao Existe!!!
 
@@ -57,7 +57,7 @@ INSERT INTO TB_PERSONAGEM VALUES(' ');  -- permite inserir,pois ' ' nao eh null.
 ##UNIQUE##
 Descricao: nao permite existir 2 valores iguais, se for null deixa qnts quiser, pode ser usado como juncao de colunas tbm.
 
-**UNIQUE In line**
+**In line**
 ```SQL
 --UNICA COLUNA
 CREATE TABLE tb_personagem(NOME varchar(5) UNIQUE) -- Cria uma constraint anonima unique na coluna NOME;
@@ -75,7 +75,7 @@ IDADE NUMBER UNIQUE
 ```
 
 
-**UNIQUE Out of Line**
+**Out of Line**
 ```SQL
 CREATE TABLE TB_PERSONAGEM(
 NOME varchar(5),
