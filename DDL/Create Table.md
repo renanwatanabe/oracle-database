@@ -16,8 +16,6 @@
 ##NOT NULL##
 Descrição:  Restrição para nao poder gravar valor null na tabela apenas.
 
-Exemplos de criação:
-
 **In line**
 ```SQL
 CREATE TABLE TB_PERSONAGEM()
@@ -35,7 +33,7 @@ NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   /* Cria uma constraint 
 
 Nao Existe!!!
 
-**NOT NULL Exemplo de Insert:**
+**Exemplo de Insert:**
 ```SQL
 INSERT INTO TB_PERSONAGEM VALUES('RENAN'); -- Insere normalmente o valor 'Renan';
 INSERT INTO TB_PERSONAGEM VALUES(''); -- DA ERRO, pois '' eh null.
