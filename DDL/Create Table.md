@@ -59,14 +59,24 @@ Descricao: nao permite existir 2 valores iguais, se for null deixa qnts quiser, 
 
 **UNIQUE In line**
 ```SQL
+
+--UNICA COLUNA
 CREATE TABLE tb_personagem(NOME varchar(5) UNIQUE) -- Cria uma constraint anonima unique na coluna NOME;
 
 CREATE TABLE TB_PERSONAGEM(
-NOME VARCHAR2(100) CONSTRAINT NICKNAME_UN UNIQUE  -- Cria uma constraint UNIQUE com o 
-                                                         -- nome 'NICKNAME_UN' na coluna Nickname.
+NOME VARCHAR2(100) CONSTRAINT NOME_UN UNIQUE); /*Cria uma constraint UNIQUE com o 
+                                                    nome 'NOME_UN' na coluna Nickname. */
 
+
+--NAO EH POSSIVEL CRIAR UNIQUE IN LINE COM MULTIPLAS COLUNAS.
+CREATE TABLE TB_PERSONAGEM(
+NOME varchar(5) UNIQUE,
+IDADE NUMBER UNIQUE
+);  -- OS UNIQUES SAO INDEPENDENTES.
 ```
 
+
+**UNIQUE Out of Line**
 
 
 
