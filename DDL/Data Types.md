@@ -35,10 +35,10 @@ SELECT LENGTH(NOME) FROM TB_PESSOA; -- retorna o valor 5, mesmo que o nome cadas
 **VARCHAR2**           | Valores
 -------------------|------------------------------------------------------------------------------
 Nome | VARCHAR2
-Descricao | Tipo de dado caractere.
-Tamanho default| Nao existe 'NOME VARCHAR2', voce sempre tera que passar um argumento, ou seja 'NOME VARCHAR2(1)'
-Tamanho Maximo | 4000 bytes.
-OBSERVACOES: 
+Descricao | Tipo de dado alfanumérico.
+Tamanho default| Não existe 'NOME VARCHAR2', voce sempre tera que passar um argumento, ou seja 'NOME VARCHAR2(1)'
+Tamanho Maximo | VARCHAR(4000), ou seja, 4000 bytes.
+OBSERVACOES: Ao inserir um registro, ele ocupara apenas o tamanho do mesmo,ou seja, se inserir 'renan', ira gravar 'renan' sem os espacos em branco.
 
 Exemplos:
 ```SQL
