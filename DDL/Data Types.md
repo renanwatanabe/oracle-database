@@ -23,6 +23,7 @@ INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a dire
 INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
 INSERT INTO TB_PESSOA VALUES(''); --realmente insere um registro no banco, porem esse valor fica como (null), se inserir 5 vezes, 
                                   --existirão 5 linhas com valor null.
+INSERT INTO TB_PESSOA VALUES(null); --Permite,cria e insere um registro com valor null;                                  
 INSERT INTO TB_PESSOA_VALUES(' ') -- insere um espaco em branco, porém em vez de ' ', vai ficar '     ';
 INSERT INTO TB_PESSOA  VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) seja tamanho 5, são 5 bytes de capacidade,
                                         --porém o caractere 'é' possui 3 bytes cada.
