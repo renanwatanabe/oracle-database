@@ -67,8 +67,7 @@ Descricao          |  Coluna do tipo numérico (precisao, escala).
 Tamanho Default    |  Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
 Tamanho maximo     | 38 digitos.
 Observacoes:       |NUMBER(precisao,escala)
-                   |-Se a precisao nao estiver especificada,o valor default eh o tamanho maximo de 38 digitos. Se a escala nao estiver especificada, o valor default eh zero.   
-                   |
+                   |-Se a precisao nao estiver especificada,o valor default eh o tamanho maximo de 38 digitos. Se a escala nao estiver especificada, o valor default eh zero.  
                    |-O valor da precisao pode ir de 1 ateh 38, e o valor da escala pode ser de -84 ateh 127.
 
               
