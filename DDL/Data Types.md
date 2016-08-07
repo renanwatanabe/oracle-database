@@ -54,6 +54,8 @@ INSERT INTO TB_PESSOA VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) 
                                         --porém o caractere 'é' possui 3 bytes cada.
 ```
 
+[TODO] NCHAR E NVARCHAR2
+
 ###NUMBER###
 
 **NUMBER**           | Valores
