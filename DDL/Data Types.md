@@ -60,16 +60,19 @@ INSERT INTO TB_PESSOA VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) 
 
 ###NUMBER###
 
-**NUMBER**           | Valores
+**NUMBER**         | Valores
 -------------------|------------------------------------------------------------------------------
-Nome | NUMBER
-Descricao |  Coluna do tipo numerico(precisao, escala).
-Tamanho Default |  Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
+Nome               | NUMBER
+Descricao          |  Coluna do tipo numérico (precisao, escala).
+Tamanho Default    |  Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
 Tamanho maximo | 38 digitos.
-Observacoes : - If a precision is not specified, the column stores values as given. If no scale is specified, the scale is zero.
-              -n defaults to the maximum value, m defaults to zero
-              -The value for n can range from 1 to 38; the value for m can range from –84 to 127
- 
+Observacoes : NUMBER(precisao,escala).
+              -Se a precisao nao estiver especificada,o valor default eh o tamanho maximo de 38 digitos.
+              -Se a escala nao estiver especificada, o valor default eh zero.
+              -O valor da precisao pode ir de 1 ateh 38, e o valor da escala pode ser de -84 ateh 127.
+
+              
+Exemplos: 
 
 
 
