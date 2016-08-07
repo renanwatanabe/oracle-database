@@ -75,12 +75,30 @@ Observacoes:       |NUMBER(precisao,escala)
 Exemplos: 
 
 ```SQL
-CREATE TABLE TB_PESSOA(IDADE number); --Cria a coluna como se fosse (38,0).
-
+CREATE TABLE TB_PESSOA(IDADE number); 
 9 x 41 - grava ok
 9 x 42 - converte para 1000 ?
 9 x 125 - tamanho maximo permitido.
 9 X 126 - DA ERRO de overflow
+
+INSERT INTO TB_PESSOA  VALUES(1);  --insere o valor 1.
+INSERT INTO TB_PESSOA  VALUES('1'); --insere o valor 1 tambem.
+INSERT INTO TB_PESSOA VALUES(012);  --insere o valor 12.
+
+INSERT INTO TB_PESSOA VALUES(1.000);  --insere o valor 1;
+INSERT INTO TB_PESSOA VALUES(1.009);  --insere o valor 1,009;
+INSERT INTO TB_PESSOA VALUES(1.000.000);  --ERRO, virgula nao encontrada.
+INSERT INTO TB_PESSOA VALUES(1,0000);  -- ERRO, eh como se fosse um segundo argumento ja.
+
+INSERT INTO TB_PESSOA  VALUES('1.009');  --ERRO, numero invalido.
+INSERT INTO TB_PESSOA  VALUES('1,009'); -- insere o valor 1,009.  
+
+
+INSERT INTO TB_PESSOA VALUES(null); --permite, e insere null.
+INSERT INTO TB_PESSOA VALUES('');   --permite e insere null tambem.
+INSERT INTO TB_PESSOA VALUES(' ');  --NAO permite.
+
+
 
 **DATE**           | Valores
 -------------------|------------------------------------------------------------------------------
