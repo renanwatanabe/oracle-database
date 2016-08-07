@@ -24,14 +24,14 @@ DATA_CRIACAO DATE);
 
 ----------------------------------
 ##NOT NULL##
-Descricao:  restrição para nao poder gravar null na tabela.
+Descrição:  Restrição para nao poder gravar valor null na tabela apenas.
 
-Exemplo de criacao:
+Exemplos de criação:
 
 **NOT NULL In line**
 ```SQL
 CREATE TABLE TB_PERSONAGEM()
-NICKNAME VARCHAR2(100) NOT NULL  -- Cria uma constraint anonima not null na coluna nickname.
+NICKNAME VARCHAR2(100) NOT NULL  -- Cria uma constraint anonima(gerada com nome pelo oracle) not null na coluna nickname.
 );
 
 CREATE TABLE TB_PERSONAGEM(
@@ -41,6 +41,7 @@ NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   -- Cria uma constraint 
 ```
 
 **NOT NULL Out of Line**
+
 Nao Existe!!!
 
 **NOT NULL Exemplo de Insert:**
