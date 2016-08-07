@@ -44,8 +44,8 @@ Exemplos:
 ```SQL
 CREATE TABLE TB_PESSOA(NOME VARCHAR2(5));
 
-INSERT INTO TB_PESSOA  VALUES(130);  //insere os caracteres '130';
-INSERT INTO TB_PESSOA  VALUES('abc'); //insere o caractere 'abc';
+INSERT INTO TB_PESSOA  VALUES(130);  --insere os caracteres '130';
+INSERT INTO TB_PESSOA  VALUES('abc'); --insere o caractere 'abc';
 INSERT INTO TB_PESSOA VALUES(''); --realmente insere um registro no banco, porem esse valor fica como (null), se inserir 5 vezes, 
                                   --existirão 5 linhas com valor null.
 INSERT INTO TB_PESSOA VALUES(null); --Permite,cria e insere um registro com valor null; 
