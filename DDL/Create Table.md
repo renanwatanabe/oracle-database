@@ -1,15 +1,5 @@
 #DDL CREATE TABLE
 
-Criacao de tabela simples:
-
-``` SQL
-CREATE TABLE TB_PERSONAGEM(
-PERSONAGEM_ID NUMBER,
-NICK VARCHAR2(250),
-NIVEL NUMBER(3),
-DATA_CRIACAO DATE);
-```
-
 ###Tipos de Constraints :###
 
 * NOT NULL
