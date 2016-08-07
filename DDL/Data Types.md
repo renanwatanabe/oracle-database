@@ -14,8 +14,7 @@ Tamanho Maximo     | 2000 bytes.
 Observacoes        | Ao inserir um registro, sera sempre considerado o tamanho maximo do campo.
 
 Exemplos :
-```SQL
-CREATE TABLE TB_PESSOA(
+```SQL CREATE TABLE TB_PESSOA(
 numero char(5)
 );
 INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a direita '1    ';
