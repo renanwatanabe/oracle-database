@@ -2,16 +2,20 @@
 
 Criacao de tabela simples:
 
+``` SQL
+CREATE TABLE TB_PERSONAGEM(
 
-`CREATE TABLE TB_PERSONAGEM(
 PERSONAGEM_ID NUMBER,
+
 NICK VARCHAR2(250),
+
 NIVEL NUMBER(3),
-DATA_CRIACAO DATE);`
+
+DATA_CRIACAO DATE);
+```
 
 
-
-Tipos de Constraints :
+###Tipos de Constraints :###
 
 NULL / NOT NULL -> nao permite inserir null, '' nas tabelas.
 UNIQUE -> nao permite existir 2 valores iguais, se for null deixa qnts quiser, pode ser usado como juncao de colunas tbm.
