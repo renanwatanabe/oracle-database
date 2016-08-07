@@ -97,7 +97,7 @@ INSERT INTO TB_PESSOA  VALUES('1,009'); -- insere o valor 1,009.
 INSERT INTO TB_PESSOA VALUES(null); --permite, e insere null.
 INSERT INTO TB_PESSOA VALUES('');   --permite e insere null tambem.
 INSERT INTO TB_PESSOA VALUES(' ');  --NAO permite.
-
+```
 
 
 **DATE**           | Valores
