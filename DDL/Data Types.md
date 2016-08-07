@@ -102,24 +102,21 @@ INSERT INTO TB_PESSOA VALUES(' ');  --NAO permite.
 
 **DATE**           | Valores
 -------------------|------------------------------------------------------------------------------
-Nome| DATE
-Descricao | Tambem considerado como datetime, armazena o dia mes ano hora minuto e segundo.
-Tamanho Default |nao existe date(1), sera sempre DATE.
-tamanho maximo |
+Nome               | DATE
+Descricao          | Tambem considerado como datetime, armazena o dia mes ano hora minuto e segundo.
+Tamanho Default    |nao existe date(1), sera sempre DATE.
+tamanho maximo     |
 Observacoes:
 
 
 Exemplos:
 ```SQL
-CREATE TABLE TB_PESSOA(
-aniversario date
-);
-
-select TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI:SS') as DATA_HORA from tb_pessoa;
-
+CREATE TABLE TB_PESSOA(nascimento date);
 
 INSERT INTO TB_PESSOA VALUES('30/06/1990');  --Ira gravar 30/06/1990 00:00:00
 INSERT INTO TB_PESSOA VALUES('30-06-1990');  --Ira gravar 30/06/1990 00:00:00
 INSERT INTO TB_PESSOA VALUES('06-30-1990');  --NAO ira gravar, vai dar erro.
 INSERT INTO TB_PESSOA VALUES(TO_DATE('30/06/1990 21:02:59', 'DD/MM/YYYY HH24:MI:SS')); --Ira gravar 30/06/1990 21:02:59
+
+select TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI:SS') as DATA_HORA from tb_pessoa;
 ```
