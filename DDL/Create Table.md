@@ -11,12 +11,11 @@ DATA_CRIACAO DATE);
 ```
 
 ###Tipos de Constraints :###
-
-NULL / NOT NULL -> nao permite inserir null, '' nas tabelas.
-UNIQUE -> nao permite existir 2 valores iguais, se for null deixa qnts quiser, pode ser usado como juncao de colunas tbm.
-PRIMARY KEY -> eh a juncao de Not null com unique.
-FOREIGN KEY
-CHECK
+**NOT NULL**
+**UNIQUE**
+**CHECK**
+**PRIMARY KEY**
+**FOREIGN KEY**
 
 
 ##NOT NULL##
