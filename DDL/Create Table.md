@@ -22,7 +22,7 @@ DATA_CRIACAO DATE);
 
 * FOREIGN KEY
 
-
+----------------------------------
 ##NOT NULL##
 Descricao:  restrição para nao poder gravar null na tabela.
 
