@@ -42,13 +42,16 @@ OBSERVACOES: Ao inserir um registro, ele ocupara apenas o tamanho do mesmo,ou se
 
 Exemplos:
 ```SQL
-CREATE TABLE TB_PESSOA(
-NOME VARCHAR2(10)
-);
-```
-```SQL
+CREATE TABLE TB_PESSOA(NOME VARCHAR2(5));
+
 INSERT INTO TB_PESSOA  VALUES(130);  //insere os caracteres '130';
 INSERT INTO TB_PESSOA  VALUES('abc'); //insere o caractere 'abc';
+INSERT INTO TB_PESSOA VALUES(''); --realmente insere um registro no banco, porem esse valor fica como (null), se inserir 5 vezes, 
+                                  --existirão 5 linhas com valor null.
+INSERT INTO TB_PESSOA VALUES(null); --Permite,cria e insere um registro com valor null; 
+INSERT INTO TB_PESSOA VALUES(' ') -- insere um espaco em branco com valor ' ', repare que ' ' NAO EH NULL.
+INSERT INTO TB_PESSOA VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) seja tamanho 5, são 5 bytes de capacidade,
+                                        --porém o caractere 'é' possui 3 bytes cada.
 ```
 
 ###NUMBER###
