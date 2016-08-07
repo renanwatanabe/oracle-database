@@ -31,7 +31,8 @@ NICKNAME VARCHAR2(100) NOT NULL  - Cria uma constraint anonima not null na colun
 );
 
 CREATE TABLE TB_PERSONAGEM()
-NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   - Cria uma constraint not null com o nome 'NICKNAME_NN' na coluna Nickname.
+NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   - Cria uma constraint not null com o 
+                                                           nome 'NICKNAME_NN' na coluna Nickname.
 );
 ```
 
