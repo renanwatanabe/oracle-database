@@ -41,11 +41,12 @@ INSERT INTO TB_PESSOA  VALUES(130);  //insere os caracteres '130';
 INSERT INTO TB_PESSOA  VALUES('abc'); //insere o caractere 'abc';
 ```
 
-**NUMBER**
-Nome: NUMBER
-Descricao: Coluna do tipo numerico(precisao, escala).
-Tamanho Default : Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
-Tamanho maximo : 38 digitos.
+**NUMBER**           | Valores
+-------------------|------------------------------------------------------------------------------
+Nome | NUMBER
+Descricao |  Coluna do tipo numerico(precisao, escala).
+Tamanho Default |  Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
+Tamanho maximo | 38 digitos.
 Observacoes : - If a precision is not specified, the column stores values as given. If no scale is specified, the scale is zero.
               -n defaults to the maximum value, m defaults to zero
               -The value for n can range from 1 to 38; the value for m can range from –84 to 127
@@ -54,11 +55,12 @@ Observacoes : - If a precision is not specified, the column stores values as giv
 
 
 
-**DATE**
-Nome: DATE
-Descricao : Tambem considerado como datetime, armazena o dia mes ano hora minuto e segundo.
-Tamanho Default : nao existe date(1), sera sempre DATE.
-tamanho maximo : 
+**DATE**           | Valores
+-------------------|------------------------------------------------------------------------------
+Nome| DATE
+Descricao | Tambem considerado como datetime, armazena o dia mes ano hora minuto e segundo.
+Tamanho Default |nao existe date(1), sera sempre DATE.
+tamanho maximo |
 Observacoes:
 
 
