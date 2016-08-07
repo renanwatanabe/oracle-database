@@ -1,6 +1,6 @@
-Tipos de dados Oracle:
+##Tipos de dados Oracle##
 
-*CHAR
+**CHAR**
 Nome : CHAR
 Descricao : Tipo de dado caractere.
 Tamanho Default : Ao criar 'SEXO CHAR' , o default serah CHAR(1).
@@ -8,7 +8,6 @@ Tamanho Maximo : 2000 bytes.
 Observacoes : Ao inserir um registro, sera sempre considerado o tamanho maximo do campo.
 
 Exemplos :
-
 CREATE TABLE TB_PESSOA(
 numero char(5)
 );
@@ -17,7 +16,7 @@ INSERT INTO TB_PESSOA  VALUES(1);  //insere o caractere '1' com 4 espacos a dire
 INSERT INTO TB_PESSOA  VALUES('a'); //insere o caractere 'a' com 4 espacos a direita 'a    ';
 
 
-*VARCHAR2
+**VARCHAR2**
 Nome : VARCHAR2
 Descricao : Tipo de dado caractere.
 Tamanho default: Nao existe 'NOME VARCHAR2', voce sempre tera que passar um argumento, ou seja 'NOME VARCHAR2(1)'
@@ -33,7 +32,7 @@ NOME VARCHAR2(10)
 INSERT INTO TB_PESSOA  VALUES(130);  //insere os caracteres '130';
 INSERT INTO TB_PESSOA  VALUES('abc'); //insere o caractere 'abc';
 
-*NUMBER
+**NUMBER**
 Nome: NUMBER
 Descricao: Coluna do tipo numerico(precisao, escala).
 Tamanho Default : Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
@@ -46,7 +45,7 @@ Observacoes : - If a precision is not specified, the column stores values as giv
 
 
 
-*DATE
+**DATE**
 Nome: DATE
 Descricao : Tambem considerado como datetime, armazena o dia mes ano hora minuto e segundo.
 Tamanho Default : nao existe date(1), sera sempre DATE.
