@@ -25,21 +25,24 @@ INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a dire
 INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
 ```
 
-**VARCHAR2**
-Nome : VARCHAR2
-Descricao : Tipo de dado caractere.
-Tamanho default: Nao existe 'NOME VARCHAR2', voce sempre tera que passar um argumento, ou seja 'NOME VARCHAR2(1)'
-Tamanho Maximo : 4000 bytes.
+**VARCHAR2**           | Valores
+-------------------|------------------------------------------------------------------------------
+Nome | VARCHAR2
+Descricao | Tipo de dado caractere.
+Tamanho default| Nao existe 'NOME VARCHAR2', voce sempre tera que passar um argumento, ou seja 'NOME VARCHAR2(1)'
+Tamanho Maximo | 4000 bytes.
 OBSERVACOES: 
 
 Exemplos:
-
+```SQL
 CREATE TABLE TB_PESSOA(
 NOME VARCHAR2(10)
 );
-
+```
+```SQL
 INSERT INTO TB_PESSOA  VALUES(130);  //insere os caracteres '130';
 INSERT INTO TB_PESSOA  VALUES('abc'); //insere o caractere 'abc';
+```
 
 **NUMBER**
 Nome: NUMBER
