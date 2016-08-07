@@ -19,8 +19,9 @@ FOREIGN KEY
 CHECK
 
 
+##NOT NULL###
+Descricao:  restrição para nao poder gravar null na tabela.
 
-NOT NULL-> restrição para nao poder gravar null na tabela.
 Exemplo de criacao:
 
 NOT NULL In line:
@@ -35,7 +36,7 @@ NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   - Cria uma constraint n
 ```
 
 NOT NULL Out of Line
-Nao Existe!!
+Nao Existe!!!
 
 Exemplo de Insert:
 ```SQL
