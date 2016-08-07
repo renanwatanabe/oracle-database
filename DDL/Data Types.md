@@ -9,10 +9,11 @@
 **Char**           | Valores
 -------------------|------------------------------------------------------------------------------
 Nome               | CHAR
-Descricao          | Tipo de dado caractere.
-Tamanho Default    | Ao criar 'SEXO CHAR' , o default serah CHAR(1).
+Descricao          | Tipo de dado alfanumérico.
+Tamanho Default    | Ao criar uma coluna como 'SEXO CHAR', o valor Default da coluna será CHAR(1).
 Tamanho Maximo     | 2000 bytes.
-Observacoes        | Ao inserir um registro, sera sempre considerado o tamanho maximo do campo.
+Observacoes        | Ao inserir um registro, será sempre considerado o tamanho máximo do campo completando com espaços em branco em branco caso o valor seja menor que o da coluna.
+
 
 Exemplos :
 ```SQL
@@ -20,6 +21,8 @@ CREATE TABLE TB_PESSOA(NOME char(5));
 
 INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a direita '1    ';
 INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
+SELECT LENGTH(NOME) FROM TB_PESSOA; -- retorna o valor 5, mesmo que o nome cadastrado seja 'a'('a    ');
+INSERT INTO TB_PESSOA  VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) seja tamanho 5, sao 5 bytes, porem o caractere 'é' possui 3 bytes cada.
 ```
 
 ###VARCHAR2###
