@@ -31,12 +31,13 @@ Exemplos de criação:
 **NOT NULL In line**
 ```SQL
 CREATE TABLE TB_PERSONAGEM()
-NICKNAME VARCHAR2(100) NOT NULL  -- Cria uma constraint anonima(gerada com nome pelo oracle) not null na coluna nickname.
+NICKNAME VARCHAR2(100) NOT NULL  /* Cria uma constraint anonima(gerada com nome pelo oracle) 
+                                    not null na coluna nickname. */
 );
 
 CREATE TABLE TB_PERSONAGEM(
-NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   -- Cria uma constraint not null com o 
-                                                         -- nome 'NICKNAME_NN' na coluna Nickname.
+NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   /* Cria uma constraint not null com o 
+                                                          nome 'NICKNAME_NN' na coluna Nickname. */
 );
 ```
 
