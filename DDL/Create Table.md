@@ -51,7 +51,7 @@ INSERT INTO TB_PERSONAGEM VALUES(null); -- DA ERRO, pois eh null.
 INSERT INTO TB_PERSONAGEM VALUES(' ');  -- permite inserir,pois ' ' nao eh null.
 ```
 
-========================================
+------------------------------------------------------------------------------------------
 ##UNIQUE##
 Descricao: nao permite existir 2 valores iguais, se for null deixa qnts quiser, pode ser usado como juncao de colunas tbm.
 
