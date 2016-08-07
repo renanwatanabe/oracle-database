@@ -65,7 +65,7 @@ Observacoes:
 
 
 Exemplos:
-
+```SQL
 CREATE TABLE TB_PESSOA(
 aniversario date
 );
@@ -77,3 +77,4 @@ INSERT INTO TB_PESSOA VALUES('30/06/1990');  --Ira gravar 30/06/1990 00:00:00
 INSERT INTO TB_PESSOA VALUES('30-06-1990');  --Ira gravar 30/06/1990 00:00:00
 INSERT INTO TB_PESSOA VALUES('06-30-1990');  --NAO ira gravar, vai dar erro.
 INSERT INTO TB_PESSOA VALUES(TO_DATE('30/06/1990 21:02:59', 'DD/MM/YYYY HH24:MI:SS')); --Ira gravar 30/06/1990 21:02:59
+```
