@@ -59,7 +59,6 @@ Descricao: nao permite existir 2 valores iguais, se for null deixa qnts quiser, 
 
 **UNIQUE In line**
 ```SQL
-
 --UNICA COLUNA
 CREATE TABLE tb_personagem(NOME varchar(5) UNIQUE) -- Cria uma constraint anonima unique na coluna NOME;
 
@@ -68,7 +67,7 @@ NOME VARCHAR2(100) CONSTRAINT NOME_UN UNIQUE); /*Cria uma constraint UNIQUE com 
                                                     nome 'NOME_UN' na coluna Nickname. */
 
 
---NAO EH POSSIVEL CRIAR UNIQUE IN LINE COM MULTIPLAS COLUNAS.
+--NAO EH POSSIVEL CRIAR UNIQUE IN LINE COM MULTIPLAS COLUNAS, Porem pode ser usado unique para varias colunas separadas.
 CREATE TABLE TB_PERSONAGEM(
 NOME varchar(5) UNIQUE,
 IDADE NUMBER UNIQUE
@@ -99,50 +98,18 @@ IDADE NUMBER,
 UNIQUE(NOME,IDADE)    -- Cria uma constraint anonima unique na coluna NOME e IDADE JUNTAS!
 );
 
-
-
-
-
-
-
-
-
-
-
-
-IN LINE:
-
-CREATE TABLE TB_PERSONAGEM(                    
-PERSONAGEM_ID NUMBER PRIMARY KEY   ---Cria uma constraint anonima na coluna personagem_id.
-);
-
-
+```SQL
 CREATE TABLE TB_PERSONAGEM(
-PERSONAGEM_ID NUMBER CONSTRAINT PERSONAGEM_ID_PK PRIMARY KEY   -- Cria uma constraint com nome PERSONAGEM_ID_PK na coluna PERSONAGEM_ID.
-);
-
-
-CREATE TABLE TB_PERSONAGEM()
-NICKNAME VARCHAR2(100) NOT NULL  - Cria uma constraint anonima not null na coluna nickname.
-);
-
-CREATE TABLE TB_PERSONAGEM()
-NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   - Cria uma constraint not null com o nome 'NICKNAME_NN' na coluna Nickname.
+NOME varchar(5),
+IDADE NUMBER,
+CONSTRAINT NOME_IDADE_UQ UNIQUE(NOME,IDADE)    -- Cria uma constraint unique com o nome 'NOME_UN' na coluna NOME e IDADE JUNTAS!
 );
 
 
 
 
-Out of Line:
 
-CREATE TABLE TB_PERSONAGEM(                    
-PERSONAGEM_ID NUMBER,
-PRIMARY KEY (PERSONAGEM_ID)   ---Cria uma constraint anonima na coluna personagem_id.
-);
 
-CREATE TABLE TB_PERSONAGEM(
-PERSONAGEM_ID NUMBER,
-CONSTRAINT PERSONAGEM_ID_PK PRIMARY KEY(PERSONAGEM_ID) -- Cria uma constraint com nome PERSONAGEM_ID_PK na coluna PERSONAGEM_ID.
-);
 
-*Nao existe out of line para constraints not null.
+
+
