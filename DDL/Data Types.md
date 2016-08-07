@@ -80,6 +80,7 @@ CREATE TABLE TB_PESSOA(IDADE number); --Cria a coluna como se fosse (38,0).
 9 x 41 - grava ok
 9 x 42 - converte para 1000 ?
 9 x 125 - tamanho maximo permitido.
+9 X 126 - DA ERRO de overflow
 
 **DATE**           | Valores
 -------------------|------------------------------------------------------------------------------
