@@ -80,15 +80,24 @@ IDADE NUMBER UNIQUE
 ```SQL
 CREATE TABLE TB_PERSONAGEM(
 NOME varchar(5),
-UNIQUE(NOME)
+UNIQUE(NOME)    -- Cria uma constraint anonima unique na coluna NOME;
 );
 
 CREATE TABLE TB_PERSONAGEM(
 NOME varchar(5),
-CONSTRAINT NOME_UQ UNIQUE(NOME)
+CONSTRAINT NOME_UQ UNIQUE(NOME) /*Cria uma constraint UNIQUE com o 
+                                                    nome 'NOME_UN' na coluna Nickname. */
 );
 ```
 
+**Multiplas colunas 
+
+```SQL
+CREATE TABLE TB_PERSONAGEM(
+NOME varchar(5),
+IDADE NUMBER,
+UNIQUE(NOME,IDADE)    -- Cria uma constraint anonima unique na coluna NOME e IDADE JUNTAS!
+);
 
 
 
