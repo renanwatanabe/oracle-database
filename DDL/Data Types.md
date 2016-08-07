@@ -23,6 +23,8 @@ INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a dire
 INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
 ```
 
+###VARCHAR2###
+
 **VARCHAR2**           | Valores
 -------------------|------------------------------------------------------------------------------
 Nome | VARCHAR2
@@ -41,6 +43,8 @@ NOME VARCHAR2(10)
 INSERT INTO TB_PESSOA  VALUES(130);  //insere os caracteres '130';
 INSERT INTO TB_PESSOA  VALUES('abc'); //insere o caractere 'abc';
 ```
+
+###NUMBER###
 
 **NUMBER**           | Valores
 -------------------|------------------------------------------------------------------------------
