@@ -19,6 +19,7 @@ Exemplos :
 CREATE TABLE TB_PESSOA(NOME char(5));
 
 INSERT INTO TB_PESSOA VALUES(1);  --insere o caractere '1' com 4 espacos a direita '1    ';
+INSERT INTO TB_PESSOA VALUES(01);  --insere o caractere '1' também com 4 espacos a direita '1    ';
 INSERT INTO TB_PESSOA VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
 INSERT INTO TB_PESSOA VALUES(''); --realmente insere um registro no banco, porem esse valor fica como (null), se inserir 5 vezes, 
                                   --existirão 5 linhas com valor null.
@@ -45,6 +46,7 @@ Exemplos:
 CREATE TABLE TB_PESSOA(NOME VARCHAR2(5));
 
 INSERT INTO TB_PESSOA VALUES(130);  --insere os caracteres '130';
+INSERT INTO TB_PESSOA VALUES(0130);  --insere os caracteres '130' também;
 INSERT INTO TB_PESSOA VALUES('abc'); --insere o caractere 'abc';
 INSERT INTO TB_PESSOA VALUES(''); --realmente insere um registro no banco, porem esse valor fica como (null), se inserir 5 vezes, 
                                   --existirão 5 linhas com valor null.
