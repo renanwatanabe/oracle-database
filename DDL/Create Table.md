@@ -10,20 +10,43 @@ NIVEL NUMBER(3),
 DATA_CRIACAO DATE);
 ```
 
-
 ###Tipos de Constraints :###
 
 NULL / NOT NULL -> nao permite inserir null, '' nas tabelas.
 UNIQUE -> nao permite existir 2 valores iguais, se for null deixa qnts quiser, pode ser usado como juncao de colunas tbm.
 PRIMARY KEY -> eh a juncao de Not null com unique.
 FOREIGN KEY
-
-
 CHECK
 
 
-Constraints(restricao): 
-Existem 2 tipos de criacao: 'in line' e 'out of line'
+
+NOT NULL-> restrição para nao poder gravar null na tabela.
+Exemplo de criacao:
+
+NOT NULL In line:
+```SQL
+CREATE TABLE TB_PERSONAGEM()
+NICKNAME VARCHAR2(100) NOT NULL  - Cria uma constraint anonima not null na coluna nickname.
+);
+
+CREATE TABLE TB_PERSONAGEM()
+NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   - Cria uma constraint not null com o nome 'NICKNAME_NN' na coluna Nickname.
+);
+```
+
+NOT NULL Out of Line
+Nao Existe!!
+
+Exemplo de Insert:
+```SQL
+INSERT INTO TB_PERSONAGEM VALUES('RENAN'); -- Insere normalmente o valor 'Renan';
+INSERT INTO TB_PERSONAGEM VALUES(''); -- DA ERRO, pois '' eh null.
+INSERT INTO TB_PERSONAGEM VALUES(null); -- DA ERRO, pois eh null.
+INSERT INTO TB_PERSONAGEM VALUES(' ');  -- permite inserir,pois ' ' nao eh null.
+```
+
+
+
 
 
 
