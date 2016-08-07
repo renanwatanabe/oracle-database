@@ -11,11 +11,16 @@ DATA_CRIACAO DATE);
 ```
 
 ###Tipos de Constraints :###
-**NOT NULL**
-**UNIQUE**
-**CHECK**
-**PRIMARY KEY**
-**FOREIGN KEY**
+
+* NOT NULL
+
+* UNIQUE
+
+* CHECK
+
+* PRIMARY KEY
+
+* FOREIGN KEY
 
 
 ##NOT NULL##
