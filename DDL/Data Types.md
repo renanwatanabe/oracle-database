@@ -1,7 +1,7 @@
 ##Tipos de dados Oracle##
 
 **CHAR**
-
+First Header       | Second Header
 -------------------|-------------
 Nome               | CHAR
 Descricao          | Tipo de dado caractere.
