@@ -86,16 +86,24 @@ IDADE NUMBER,
 UNIQUE(NOME,IDADE)    -- Cria uma constraint anonima unique na coluna NOME e IDADE JUNTAS!
 );
 
-```SQL
+
 CREATE TABLE TB_PERSONAGEM(
 NOME varchar(5),
 IDADE NUMBER,
 CONSTRAINT NOME_IDADE_UQ UNIQUE(NOME,IDADE)    -- Cria uma constraint unique com o nome 'NOME_UN' na coluna NOME e IDADE JUNTAS!
 );
+```
+-----------------------------------------------------------------------
+##Check##
+Descricao: Verifica se o valor inserido eh um dos validos declarados.
 
+```SQL
+CREATE TABLE TB_PERSONAGEM( IDADE NUMBER CHECK(IDADE IN(4,5)) );
 
-
-
+CREATE TABLE TB_PERSONAGEM(
+NOME NUMBER CHECK(NOME LIKE '%4' or nome = 5)
+);
+```
 
 
 
