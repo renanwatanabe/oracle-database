@@ -9,11 +9,10 @@
 **Char**           | Valores
 -------------------|------------------------------------------------------------------------------
 Nome               | CHAR
-Descricao          | Tipo de dado alfanumérico.
+Descrição          | Tipo de dado alfanumérico.
 Tamanho Default    | Ao criar uma coluna como 'SEXO CHAR', o valor Default da coluna será CHAR(1).
-Tamanho Maximo     | CHAR(2000), ou seja, 2000 bytes.
-Observacoes        | Ao inserir um registro, será sempre considerado o tamanho máximo do campo completando com espaços em branco caso o valor seja menor que o da coluna.
-
+Tamanho Máximo     | CHAR(2000), ou seja, 2000 bytes.
+Observações        | Ao inserir um registro, será sempre considerado o tamanho máximo do campo completando com espaços em branco caso o valor seja menor que o da coluna.
 
 Exemplos :
 ```SQL
