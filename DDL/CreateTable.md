@@ -1,4 +1,4 @@
-DDL CREATE TABLE
+#DDL CREATE TABLE
 
 Criacao de tabela simples:
 
