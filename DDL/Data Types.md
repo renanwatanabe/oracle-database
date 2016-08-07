@@ -2,12 +2,12 @@
 
 **CHAR**
 
------------|-------------
-Nome | CHAR
-Descricao | Tipo de dado caractere.
-Tamanho Default | Ao criar 'SEXO CHAR' , o default serah CHAR(1).
-Tamanho Maximo | 2000 bytes.
-Observacoes | Ao inserir um registro, sera sempre considerado o tamanho maximo do campo.
+-------------------|-------------
+Nome               | CHAR
+Descricao          | Tipo de dado caractere.
+Tamanho Default    | Ao criar 'SEXO CHAR' , o default serah CHAR(1).
+Tamanho Maximo     | 2000 bytes.
+Observacoes        | Ao inserir um registro, sera sempre considerado o tamanho maximo do campo.
 
 Exemplos :
 CREATE TABLE TB_PESSOA(
