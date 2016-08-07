@@ -22,7 +22,8 @@ CREATE TABLE TB_PESSOA(NOME char(5));
 INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a direita '1    ';
 INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
 SELECT LENGTH(NOME) FROM TB_PESSOA; -- retorna o valor 5, mesmo que o nome cadastrado seja 'a'('a    ');
-INSERT INTO TB_PESSOA  VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) seja tamanho 5, sao 5 bytes, porem o caractere 'é' possui 3 bytes cada.
+INSERT INTO TB_PESSOA  VALUES('ééééé'); --Dá ERRO! Mesmo que o varchar2(5) seja tamanho 5, sao 5 bytes, porem o caractere
+'é' possui 3 bytes cada.
 ```
 
 ###VARCHAR2###
