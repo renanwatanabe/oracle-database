@@ -67,14 +67,18 @@ Descricao          |  Coluna do tipo numérico (precisao, escala).
 Tamanho Default    |  Ao criar NUMBER com valor DEFAULT, sera criado NUMBER sem nenhuma precisao.  'IDADE NUMBER' , sera criado o tipo NUMBER.
 Tamanho maximo     | 38 digitos.
 Observacoes:       |NUMBER(precisao,escala)
-                   |-Se a precisao nao estiver especificada,o valor default eh o tamanho maximo de 38 digitos. Se a escala nao estiver especificada, o valor default eh zero.  
+                   | -Se a precisao nao estiver especificada,o valor default eh o tamanho maximo de 38 digitos. Se a escala nao estiver especificada, o valor default eh zero.  
                    |-O valor da precisao pode ir de 1 ateh 38, e o valor da escala pode ser de -84 ateh 127.
+                   
 
               
 Exemplos: 
 
+```SQL
+CREATE TABLE TB_PESSOA(IDADE number); --Cria a coluna como se fosse (38,0).
 
-
+9 x 41 - grava ok
+9 x 42 - converte para 1000 ?
 
 **DATE**           | Valores
 -------------------|------------------------------------------------------------------------------
