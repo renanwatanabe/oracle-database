@@ -1,8 +1,12 @@
 ##Tipos de dados Oracle##
 
+
+
+
 **CHAR**
+
 First Header       | Second Header
--------------------|-------------
+-------------------|------------------------------------------------------------------------------
 Nome               | CHAR
 Descricao          | Tipo de dado caractere.
 Tamanho Default    | Ao criar 'SEXO CHAR' , o default serah CHAR(1).
