@@ -30,7 +30,7 @@ CREATE TABLE TB_PERSONAGEM()
 NICKNAME VARCHAR2(100) NOT NULL  -- Cria uma constraint anonima not null na coluna nickname.
 );
 
-CREATE TABLE TB_PERSONAGEM()
+CREATE TABLE TB_PERSONAGEM(
 NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   -- Cria uma constraint not null com o 
                                                          -- nome 'NICKNAME_NN' na coluna Nickname.
 );
@@ -46,6 +46,31 @@ INSERT INTO TB_PERSONAGEM VALUES(''); -- DA ERRO, pois '' eh null.
 INSERT INTO TB_PERSONAGEM VALUES(null); -- DA ERRO, pois eh null.
 INSERT INTO TB_PERSONAGEM VALUES(' ');  -- permite inserir,pois ' ' nao eh null.
 ```
+
+
+##UNIQUE##
+Descricao: nao permite existir 2 valores iguais, se for null deixa qnts quiser, pode ser usado como juncao de colunas tbm.
+
+**UNIQUE In line**
+```SQL
+CREATE TABLE tb_personagem(NOME varchar(5) UNIQUE) -- Cria uma constraint anonima unique na coluna NOME;
+
+CREATE TABLE TB_PERSONAGEM(
+NOME VARCHAR2(100) CONSTRAINT NICKNAME_UN UNIQUE  -- Cria uma constraint UNIQUE com o 
+                                                         -- nome 'NICKNAME_UN' na coluna Nickname.
+
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
