@@ -18,9 +18,6 @@ Exemplos :
 CREATE TABLE TB_PESSOA(
 numero char(5)
 );
-```
-
-```SQL
 INSERT INTO TB_PESSOA  VALUES(1);  --insere o caractere '1' com 4 espacos a direita '1    ';
 INSERT INTO TB_PESSOA  VALUES('a'); --insere o caractere 'a' com 4 espacos a direita 'a    ';
 ```
