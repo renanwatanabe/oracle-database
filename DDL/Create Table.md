@@ -19,12 +19,12 @@ FOREIGN KEY
 CHECK
 
 
-##NOT NULL###
+##NOT NULL##
 Descricao:  restrição para nao poder gravar null na tabela.
 
 Exemplo de criacao:
 
-NOT NULL In line:
+**NOT NULL In line**
 ```SQL
 CREATE TABLE TB_PERSONAGEM()
 NICKNAME VARCHAR2(100) NOT NULL  -- Cria uma constraint anonima not null na coluna nickname.
@@ -36,10 +36,10 @@ NICKNAME VARCHAR2(100) CONSTRAINT NICKNAME_NN NOT NULL   -- Cria uma constraint 
 );
 ```
 
-NOT NULL Out of Line
+**NOT NULL Out of Line**
 Nao Existe!!!
 
-Exemplo de Insert:
+**NOT NULL Exemplo de Insert:**
 ```SQL
 INSERT INTO TB_PERSONAGEM VALUES('RENAN'); -- Insere normalmente o valor 'Renan';
 INSERT INTO TB_PERSONAGEM VALUES(''); -- DA ERRO, pois '' eh null.
